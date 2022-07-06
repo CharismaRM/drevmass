@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220705173134">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220706210648">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +15,7 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
+			<div class="header__bg"><picture><source srcset="img/bg.webp" type="image/webp"><img src="img/bg.png" alt=""></picture></div>
 			<div class="header__container">
 				<div class="header__body">
 					<div class="header__content">
@@ -204,7 +205,7 @@
 											межпозвонковых дисков. Упражнения йоги выведут мышцы из хронического напряжения,
 											оздоровят суставы позвоночника, вернут ему гибкость и здоровье.
 										</p>
-										<a href="" class="therapy__btn">Подробнее о тренажере</a>
+										<a href="#" data-goto=".allinclusive__body" class="therapy__btn">Подробнее о тренажере</a>
 									</div>
 								</div>
 							</div>
@@ -226,7 +227,7 @@
 											длительного напряжения, улучшить питание межпозвонкового диска
 											и сформировать идеальные условия для естественного заживления.
 										</p>
-										<a href="" class="therapy__btn">Подробнее о тренажере</a>
+										<a href="#" data-goto=".allinclusive__body" class="therapy__btn">Подробнее о тренажере</a>
 									</div>
 								</div>
 							</div>
@@ -247,7 +248,7 @@
 											улучшить кровообращение и питание мозга, а также сформировать гармонично развитый
 											мышечный корсет шейного отдела позвоночника.
 										</p>
-										<a href="" class="therapy__btn">Подробнее о тренажере</a>
+										<a href="#" data-goto=".allinclusive__body" class="therapy__btn">Подробнее о тренажере</a>
 									</div>
 								</div>
 							</div>
@@ -269,7 +270,7 @@
 											помогут снять нагрузку с мышц, забыть про боль и улучшить кровоснабжение
 											пояснично-крестцовой области.
 										</p>
-										<a href="" class="therapy__btn">Подробнее о тренажере</a>
+										<a href="#" data-goto=".allinclusive__body" class="therapy__btn">Подробнее о тренажере</a>
 									</div>
 								</div>
 							</div>
@@ -385,8 +386,9 @@
 								<div class="allinclusive__text text">Количество товара ограничено! <br> Закажите Древмасс
 									сейчас!</div>
 								<div class="allinclusive__btns">
-									<div class="allinclusive__btn">Заказать тренажер</div>
-									<div class="allinclusive__btn allinclusive__btn_white">Оплатить долями</div>
+									<div data-popup="#popupform" class="allinclusive__btn">Заказать тренажер</div>
+									<div class="allinclusive__btn allinclusive__btn_white">Оплатить долями
+									</div>
 								</div>
 							</div>
 						</div>
@@ -402,8 +404,7 @@
 	<div id="popupone" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
-				<!-- <button data-close type="button" class="popup__close">Закрыть</button> -->
-				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ws0pdqq3y2g?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="popup__video"><iframe src="https://www.youtube.com/embed/ws0pdqq3y2g?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 			</div>
 		</div>
 	</div>
@@ -412,8 +413,9 @@
 	<div id="popuptwo" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
-				<!-- <button data-close type="button" class="popup__close">Закрыть</button> -->
-				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/xVb0IPVVSrQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="popup__video"><iframe src="https://www.youtube.com/embed/xVb0IPVVSrQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+
 			</div>
 		</div>
 	</div>
@@ -422,8 +424,8 @@
 	<div id="popupthree" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
-				<!-- <button data-close type="button" class="popup__close">Закрыть</button> -->
-				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/j6A2vzOvSjs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="popup__video"><iframe src="https://www.youtube.com/embed/j6A2vzOvSjs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
 			</div>
 		</div>
 	</div>
@@ -432,8 +434,7 @@
 	<div id="popupfour" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
-				<!-- <button data-close type="button" class="popup__close">Закрыть</button> -->
-				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/xVb0IPVVSrQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="popup__video"><iframe src="https://www.youtube.com/embed/xVb0IPVVSrQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 			</div>
 		</div>
 	</div>
@@ -441,12 +442,44 @@
 	<div id="popupfive" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
-				<!-- <button data-close type="button" class="popup__close">Закрыть</button> -->
-				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/g21CoKyhI_M?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="popup__video"><iframe src="https://www.youtube.com/embed/g21CoKyhI_M?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220705173134"></script>
+
+	<div id="popupform" aria-hidden="true" class="popup popupform">
+		<div class="popup__wrapper">
+			<div class="popup__content callback">
+				<div class="callback__header">
+					<div class="callback__title">Заказать звонок</div>
+					<button data-close type="button" class="popup__close"></button>
+				</div>
+				<div class="callback__subtitle">Мы перезвоним Вам и ответим на Ваши вопросы</div>
+				<div class="callback__form form">
+					<div class="form__line ">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше Имя" class="input ">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Телефон" class="input ">
+					</div>
+
+
+				</div>
+				<div class="callback__text ">Количество товара ограничено! <br> Закажите Древмасс сейчас!</div>
+				<button type="button" data-popup="#popupthx" type="submit" class="button">Отправить</button>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="popupthx" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content thx">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="thx__title">СПАСИБО!</div>
+				<div class="thx__text">Мы перезвоним Вам <br> в ближайшее время</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220706210648"></script>
 </body>
 
 </html>
