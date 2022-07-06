@@ -1854,6 +1854,12 @@ body::after {
   }
 }
 
+@media (max-width: 29.99875em) {
+  .popup__content {
+    max-width: 300px;
+  }
+}
+
 @media (any-hover: hover) {
   .button:hover {
     -webkit-transform: translate(0px, -5px);
