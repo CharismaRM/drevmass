@@ -962,8 +962,16 @@ body::after {
           align-items: center;
 }
 
-.aboutme__image img {
-  max-width: 480px;
+@supports (width: clamp( 12.5rem , 6.2219730942rem  +  31.3901345291vw , 30rem )) {
+  .aboutme__image img {
+    width: clamp( 12.5rem , 6.2219730942rem  +  31.3901345291vw , 30rem );
+  }
+}
+
+@supports not (width: clamp( 12.5rem , 6.2219730942rem  +  31.3901345291vw , 30rem )) {
+  .aboutme__image img {
+    width: calc(12.5rem + 17.5 * (100vw - 20rem) / 55.75);
+  }
 }
 
 .aboutme__text {
@@ -1242,6 +1250,9 @@ body::after {
      -moz-column-gap: 5px;
           column-gap: 5px;
   row-gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .slavyoga__item {
@@ -1412,7 +1423,7 @@ body::after {
 }
 
 .allinclusive__image img {
-  width: 500px;
+  max-width: 500px;
 }
 
 .allinclusive__sale {
@@ -1573,6 +1584,10 @@ body::after {
 
   .howtouse__video img {
     width: 400px;
+  }
+
+  .allinclusive__image img {
+    width: 200px;
   }
 }
 
@@ -1766,7 +1781,7 @@ body::after {
 
   .page__howtouse {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
 
   .howtouse__title {
