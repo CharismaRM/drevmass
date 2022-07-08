@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,regular,500&display=swap;
 
 );
-@import url(https://fonts.googleapis.com/css?family=Inter:regular&display=swap);
 @charset "UTF-8";
 @font-face {
   font-family: Madeevolvesans;
@@ -57,7 +56,7 @@ body {
 body {
   color: #000;
   line-height: 1;
-  font-family: "MADE Evolve Sans";
+  font-family: "Madeevolvesans";
   font-size: 1.1875rem;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -69,7 +68,7 @@ body {
 input,
 button,
 textarea {
-  font-family: "MADE Evolve Sans";
+  font-family: "Madeevolvesans";
   font-size: inherit;
 }
 
@@ -292,7 +291,7 @@ body::after {
   -o-transition: transform 0.3s ease 0s;
   transition: transform 0.3s ease 0s;
   transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
-  background-color: #eee;
+  background-color: transparent;
   width: 100%;
   position: relative;
   max-width: 900px;
@@ -324,6 +323,7 @@ body::after {
 
 .callback {
   max-width: 480px;
+  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -478,11 +478,17 @@ body::after {
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  font-family: "MADE Evolve Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
   line-height: 1.5333333333;
+}
+
+.title span {
+  display: inline;
+  background-color: #00B1AA;
+  padding: 3px 10px;
+  color: #FFFFFF;
 }
 
 .btn {
@@ -535,15 +541,24 @@ body::after {
 }
 
 .header {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
   background: #00B1AA;
   position: relative;
 }
 
-.header__bg {
+.header__bgleft {
   position: absolute;
-  top: 1%;
-  left: -12%;
-  width: 100%;
+  top: -10%;
+  left: -3%;
+  height: 100%;
+}
+
+.header__bgright {
+  position: absolute;
+  top: -10%;
+  right: -3%;
   height: 100%;
 }
 
@@ -580,7 +595,6 @@ body::after {
 .header__title {
   font-size: 36px;
   line-height: 1.2777777778;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #fff;
   margin: 0px 0px 20px 0px;
@@ -616,7 +630,6 @@ body::after {
 }
 
 .header__text {
-  background: #fff;
   color: #00B1AA;
   -webkit-transform: rotate(-10deg) translate(20%, -70px);
       -ms-transform: rotate(-10deg) translate(20%, -70px);
@@ -625,19 +638,25 @@ body::after {
   font-weight: 400;
   font-size: 24px;
   line-height: 1.1666666667;
-  text-align: center;
 }
 
-@supports (width: clamp( 16.875rem , 11.7180493274rem  +  25.7847533632vw , 31.25rem )) {
+@supports (width: clamp( 16.875rem , 9.475896861rem  +  36.9955156951vw , 37.5rem )) {
   .header__text {
-    width: clamp( 16.875rem , 11.7180493274rem  +  25.7847533632vw , 31.25rem );
+    width: clamp( 16.875rem , 9.475896861rem  +  36.9955156951vw , 37.5rem );
   }
 }
 
-@supports not (width: clamp( 16.875rem , 11.7180493274rem  +  25.7847533632vw , 31.25rem )) {
+@supports not (width: clamp( 16.875rem , 9.475896861rem  +  36.9955156951vw , 37.5rem )) {
   .header__text {
-    width: calc(16.875rem + 14.375 * (100vw - 20rem) / 55.75);
+    width: calc(16.875rem + 20.625 * (100vw - 20rem) / 55.75);
   }
+}
+
+.header__text span {
+  display: inline;
+  background-color: #fff;
+  padding: 3px 0px;
+  color: #00B1AA;
 }
 
 /*
@@ -720,6 +739,8 @@ body::after {
   font-size: 30px;
   line-height: 1.15;
   text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .method__icons {
@@ -837,6 +858,10 @@ body::after {
           column-gap: 10px;
 }
 
+.reasons__text_hiden {
+  visibility: hidden;
+}
+
 .reasons__text img {
   width: 56px;
 }
@@ -917,19 +942,21 @@ body::after {
 }
 
 .aboutme__title {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 30px;
-  line-height: 46px;
-  background: #00B1AA;
-  padding: 3px 10px;
+  line-height: 1.2666666667;
   color: #fff;
   margin: 0px 0px 57px 0px;
+}
+
+.aboutme__title span {
+  display: inline;
+  background-color: #00B1AA;
+  padding: 3px 10px;
+  color: #FFFFFF;
 }
 
 .aboutme__content {
@@ -973,6 +1000,10 @@ body::after {
   .aboutme__image img {
     width: calc(12.5rem + 17.5 * (100vw - 20rem) / 55.75);
   }
+}
+
+.aboutme__image_mb {
+  display: none;
 }
 
 .aboutme__text {
@@ -1046,15 +1077,21 @@ body::after {
 
 .therapy__maintitle {
   font-size: 30px;
-  line-height: 1.5333333333;
+  line-height: 1.2666666667;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
   padding: 0px 10px;
-  background: #00B1AA;
   margin: 0px auto;
   letter-spacing: 0.05em;
   margin: 0px 0px 57px 0px;
+}
+
+.therapy__maintitle span {
+  display: inline;
+  background-color: #00B1AA;
+  padding: 7px 10px 3px;
+  color: #FFFFFF;
 }
 
 .therapy__list {
@@ -1125,6 +1162,9 @@ body::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @supports ((-moz-column-gap: clamp( 0.0000000625rem , -2.6905828747rem  +  13.4529146861vw , 7.5rem )) or (column-gap: clamp( 0.0000000625rem , -2.6905828747rem  +  13.4529146861vw , 7.5rem ))) {
@@ -1151,10 +1191,50 @@ body::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.therapy__image:hover::before {
+  content: url("../img/therapy/yth.svg");
+}
+
+.therapy__image::before {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  content: url("../img/therapy/yt.svg");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 3;
 }
 
 .therapy__image img {
+  z-index: 2;
   width: 580px;
+}
+
+.therapy__link {
+  position: absolute;
+  width: 100%;
+  bottom: 10%;
+  left: 0;
+  background: -webkit-gradient(linear, right top, left top, color-stop(2.65%, rgba(0, 0, 0, 0)), color-stop(21.85%, rgba(0, 0, 0, 0.3)), color-stop(77.97%, rgba(0, 0, 0, 0.3)), color-stop(97.17%, rgba(0, 0, 0, 0)));
+  background: -o-linear-gradient(right, rgba(0, 0, 0, 0) 2.65%, rgba(0, 0, 0, 0.3) 21.85%, rgba(0, 0, 0, 0.3) 77.97%, rgba(0, 0, 0, 0) 97.17%);
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 2.65%, rgba(0, 0, 0, 0.3) 21.85%, rgba(0, 0, 0, 0.3) 77.97%, rgba(0, 0, 0, 0) 97.17%);
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  z-index: 3;
+  font-size: 19px;
+  line-height: 1.5789473684;
 }
 
 .therapy__text {
@@ -1174,6 +1254,12 @@ body::after {
   background: #00B1AA;
   padding: 10px 40px;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
@@ -1266,6 +1352,8 @@ body::after {
           flex-direction: column;
   row-gap: 7px;
   cursor: pointer;
+  font-family: "Roboto";
+  font-weight: 300;
 }
 
 .slavyoga__subtitle {
@@ -1320,11 +1408,16 @@ body::after {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #FFFFFF;
-  background: #00B1AA;
-  padding: 3px 10px;
   font-weight: 500;
   font-size: 30px;
-  line-height: 1.5333333333;
+  line-height: 1.2666666667;
+}
+
+.howtouse__title span {
+  display: inline;
+  background-color: #00B1AA;
+  padding: 7px 10px 3px;
+  color: #FFFFFF;
 }
 
 .howtouse__video {
@@ -1335,6 +1428,25 @@ body::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+.howtouse__video:hover::before {
+  content: url("../img/therapy/yth.svg");
+}
+
+.howtouse__video::before {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  content: url("../img/therapy/yt.svg");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 3;
 }
 
 .howtouse__video img {
@@ -1368,13 +1480,11 @@ body::after {
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
-  line-height: 1.5333333333;
+  line-height: 1.2666666667;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #fff;
-  background: #00B1AA;
-  padding: 3px 10px;
   margin: 0px 0px 30px 0px;
 }
 
@@ -1513,7 +1623,7 @@ body::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  gap: 15px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -1525,8 +1635,8 @@ body::after {
 .allinclusive__complect {
   color: #fff;
   background: #00B1AA;
-  padding: 3px 5px;
-  width: 205px;
+  padding: 3px;
+  width: 207px;
   font-weight: 400;
   font-size: 17px;
   line-height: 1.1764705882;
@@ -1561,6 +1671,23 @@ body::after {
   -webkit-transform: translate(0px, -5px);
       -ms-transform: translate(0px, -5px);
           transform: translate(0px, -5px);
+  background: #00948E;
+}
+
+.allinclusive__btn:active {
+  background: #80C9C4;
+  /* тень */
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.allinclusive__btn:focus {
+  background: #D5D5D5;
+  /* тень */
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
 }
 
 .allinclusive__btn_white {
@@ -1569,14 +1696,60 @@ body::after {
   border-radius: 5px;
 }
 
+.allinclusive__btn_white:hover {
+  background: #D5D5D5;
+}
+
+.allinclusive__btn_white:active {
+  /* white */
+  background: #FFFFFF;
+  /* gray3 */
+}
+
+.allinclusive__btn_white:focus {
+  /* white */
+  background: #FFFFFF;
+  /* gray3 */
+}
+
+.page__yt {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: #EAEAEA;
+}
+
+.yt__body {
+  margin: 0px 0px 0px 50%;
+  width: 100%;
+}
+
+.yt__btn_mob {
+  display: none;
+}
+
+@media (min-width: 47.99875em) {
+  .allinclusive__title span {
+    display: inline;
+    background-color: #00B1AA;
+    padding: 10px 10px;
+    color: #FFFFFF;
+  }
+}
+
+@media (max-width: 75.75em) {
+  .header__bgleft {
+    display: none;
+  }
+
+  .header__bgright {
+    display: none;
+  }
+}
+
 @media (max-width: 61.99875em) {
   .header {
     padding-top: 20px;
     padding-bottom: 40px;
-  }
-
-  .header__bg {
-    display: none;
   }
 
   .therapy__image img {
@@ -1617,6 +1790,7 @@ body::after {
     text-align: center;
     font-size: 29px;
     font-weight: 400;
+    letter-spacing: 0em;
   }
 
   .header__image {
@@ -1638,6 +1812,7 @@ body::after {
         -ms-transform: rotate(0deg) translate(0%, 0px);
             transform: rotate(0deg) translate(0%, 0px);
     font-size: 17px;
+    line-height: 1.0416666667;
   }
 
   .page__method {
@@ -1677,10 +1852,6 @@ body::after {
     margin: 0px 0px 30px 0px;
   }
 
-  .aboutme__title {
-    max-width: 280px;
-  }
-
   .aboutme__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1699,6 +1870,14 @@ body::after {
 
   .aboutme__image img {
     max-width: 280px;
+  }
+
+  .aboutme__image_pk {
+    display: none;
+  }
+
+  .aboutme__image_mb {
+    display: block;
   }
 
   .aboutme__text {
@@ -1749,13 +1928,22 @@ body::after {
     margin: 0px auto;
   }
 
+  .therapy__link {
+    font-size: 17px;
+  }
+
+  .therapy__btn {
+    width: 100%;
+  }
+
   .therapy__info {
     width: 100%;
     margin: 60px 0px 0px 0px;
   }
 
   .page__slavyoga {
-    padding-bottom: 60px;
+    padding-bottom: 0px;
+    background: #EAEAEA;
   }
 
   .slavyoga__body {
@@ -1769,6 +1957,10 @@ body::after {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .slavyoga__logo {
+    margin: 0px 0px 0px 0px;
   }
 
   .slavyoga__logo::after {
@@ -1851,16 +2043,43 @@ body::after {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 20px 0px 20px 0px;
+    width: 100%;
   }
 
   .allinclusive__btn {
     width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .page__yt {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .yt__body {
+    margin: 0px 0px;
+  }
+
+  .yt__btn_pc {
+    display: none;
+  }
+
+  .yt__btn_mob {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 @media (max-width: 29.99875em) {
   .popup__content {
-    max-width: 300px;
+    width: 90%;
   }
 }
 

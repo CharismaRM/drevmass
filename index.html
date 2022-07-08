@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220707071427">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220708214221">
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,8 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="header__bg"><picture><source srcset="img/bg.webp" type="image/webp"><img src="img/bg.png" alt=""></picture></div>
+			<div class="header__bgleft"><picture><source srcset="img/header/left.webp" type="image/webp"><img src="img/header/left.png" alt=""></picture></div>
+			<div class="header__bgright"><picture><source srcset="img/header/right.webp" type="image/webp"><img src="img/header/right.png" alt=""></picture></div>
 			<div class="header__container">
 				<div class="header__body">
 					<div class="header__content">
@@ -34,7 +35,9 @@
 					</div>
 					<div data-da=".header__content, 768, 1" class="header__image">
 						<picture><source srcset="img/header/headerImg.webp" type="image/webp"><img src="img/header/headerImg.png" alt="headerImg"></picture>
-						<div class="header__text text">Не пугайтесь - у вас упражнения будут не такие. Это высший пилотаж.</div>
+						<div class="header__text text">
+							<span>Не пугайтесь - у вас упражнения будут не такие. Это высший пилотаж.</span>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -82,8 +85,11 @@
 												позвонков</span> </div>
 										<div class="reasons__text text"><img src="img/reasons/icon5.svg" alt=""> <span>Сидячий
 												образ жизни</span> </div>
-										<div class="reasons__text text"><img src="img/reasons/icon6.svg" alt=""> <span>Смещение
-												позвонков</span> </div>
+										<div class="reasons__text text">
+											<img src="img/reasons/icon6.svg" alt="">
+											<span>Смещение
+												позвонков</span>
+										</div>
 									</div>
 
 								</div>
@@ -108,9 +114,12 @@
 										</div>
 										<div class="reasons__text text"><img src="img/reasons/icon11.svg" alt=""> <span>Травмы
 												позвоночника</span> </div>
-										<div class="reasons__text text"><img src="img/reasons/icon12.svg" alt=""> <span>и многие
+										<div class="reasons__text text">
+											<img src="img/reasons/icon12.svg" class="reasons__text_hiden" alt="">
+											<span>и многие
 												другие
-											</span> </div>
+											</span>
+										</div>
 									</div>
 
 								</div>
@@ -123,8 +132,8 @@
 			<section class="page__measures measures">
 				<div class="measures__container">
 					<div class="measures__body">
-						<div class="measures__title title">Какие меры срочно необходимо предпринять для уменьшения боли в
-							спине?</div>
+						<h1 class="measures__title title">Какие меры срочно необходимо предпринять для уменьшения боли в
+							спине?</h1>
 						<div class="measures__description">
 							<ul class="measures__list">
 								<li class="measures__text text"><img src="img/measures/one.svg" alt="one">В первую очередь,
@@ -142,14 +151,18 @@
 				<div class="aboutme__container">
 					<div class="aboutme__body">
 						<h2 class="aboutme__title title">
-							Давайте знакомиться !
+							<span>
+								Давайте знакомиться!
+							</span>
 						</h2>
 						<div class="aboutme__content">
 							<div class="aboutme__image">
-								<picture><source srcset="img/aboutme/photo.webp" type="image/webp"><img src="img/aboutme/photo.png" alt="photo"></picture>
+								<picture><source srcset="img/aboutme/photopk.webp" type="image/webp"><img src="img/aboutme/photopk.png" class="aboutme__image_pk" alt="photo"></picture>
+								<picture><source srcset="img/aboutme/photo.webp" type="image/webp"><img src="img/aboutme/photo.png" class="aboutme__image_mb" alt="photo"></picture>
+
 							</div>
 							<div class="aboutme__description">
-								<div class="aboutme__text text">Я,<span> Чернов Сергей Анатольевич</span> - доктор.</div>
+								<div class="aboutme__text text">Я, <span>Чернов Сергей Анатольевич</span> - доктор.</div>
 								<div class="aboutme__text text">
 									Окончил Витебский государственный медицинский университет, в 2009 году. <br> Специализация -
 									лечебное дело. <br> Мастер йоги, эксперт в вопросах комплексного восстановления здоровья,
@@ -179,7 +192,8 @@
 			<section class="page__therapy therapy">
 				<div class="therapy__container">
 					<div class="therapy__body">
-						<h2 class="therapy__maintitle">Выберите свою проблему и я покажу, как с ней работать</h2>
+						<h2 class="therapy__maintitle"><span>Выберите свою проблему и я покажу, как с ней работать</span>
+						</h2>
 						<ul class="therapy__list">
 							<li class="therapy__point">Специально для вас я подготовил простые упражнения на каждый день,
 								которые помогут чувствовать себя лучше и избавиться от боли.</li>
@@ -191,7 +205,7 @@
 							<div class="therapy__item">
 								<h3 class="therapy__title title">Лечение остеохондроза</h3>
 								<div class="therapy__content">
-									<div data-popup="#popupone" class="therapy__image"><picture><source srcset="img/therapy/video1.webp" type="image/webp"><img src="img/therapy/video1.png" alt="videoone"></picture></div>
+									<div data-popup-youtube="ws0pdqq3y2g" data-popup="#popupone" class="therapy__image"><picture><source srcset="img/therapy/video1.webp" type="image/webp"><img src="img/therapy/video1.png" alt="videoone"></picture></div>
 									<div class="therapy__description">
 										<p class="therapy__text text">Остеохондроз позвоночника встречается в 30-50% случаев у
 											30-40-летних
@@ -212,7 +226,9 @@
 							<div class="therapy__item">
 								<h3 class="therapy__title title">Лечение протрузии и межпозвоночной грыжи </h3>
 								<div class="therapy__content">
-									<div data-popup="#popuptwo" class="therapy__image"><picture><source srcset="img/therapy/video2.webp" type="image/webp"><img src="img/therapy/video2.png" alt="videotwo"></picture></div>
+									<div data-popup-youtube="xVb0IPVVSrQ" data-popup="#popuptwo" class="therapy__image"><picture><source srcset="img/therapy/video2.webp" type="image/webp"><img src="img/therapy/video2.png" alt="videotwo"></picture>
+										<a href="#" class="therapy__link">Посмотреть видео</a>
+									</div>
 									<div class="therapy__description">
 										<p class="therapy__text text">Межпозвонковая грыжа - это выпадение содержимого
 											межпозвонкового диска,
@@ -234,7 +250,9 @@
 							<div class="therapy__item">
 								<h3 class="therapy__title title">Лечение боли в шейно-воротниковой зоне</h3>
 								<div class="therapy__content">
-									<div data-popup="#popupthree" class="therapy__image"><picture><source srcset="img/therapy/video3.webp" type="image/webp"><img src="img/therapy/video3.png" alt="videothree"></picture></div>
+									<div data-popup-youtube="j6A2vzOvSjs" data-popup="#popupthree" class="therapy__image"><picture><source srcset="img/therapy/video3.webp" type="image/webp"><img src="img/therapy/video3.png" alt="videothree"></picture>
+										<a href="#" class="therapy__link">Посмотреть видео</a>
+									</div>
 									<div class="therapy__description">
 										<p class="therapy__text text">Боль в шейно-воротниковой зоне - одна из самых актуальных
 											проблем современного
@@ -255,7 +273,9 @@
 							<div class="therapy__item">
 								<h3 class="therapy__title title">Победить ишиас без лекарств</h3>
 								<div class="therapy__content">
-									<div data-popup="#popupfour" class="therapy__image"><picture><source srcset="img/therapy/video4.webp" type="image/webp"><img src="img/therapy/video4.png" alt="videofour"></picture></div>
+									<div data-popup-youtube="xVb0IPVVSrQ" data-popup="#popupfour" class="therapy__image"><picture><source srcset="img/therapy/video4.webp" type="image/webp"><img src="img/therapy/video4.png" alt="videofour"></picture>
+										<a href="#" class="therapy__link">Посмотреть видео</a>
+									</div>
 									<div class="therapy__description">
 										<p class="therapy__text text">Ишиас - это боль в пояснично-крестцовой области, которая
 											очень часто возникает
@@ -285,7 +305,7 @@
 				<div class="slavyoga__container">
 					<div class="slavyoga__body">
 						<div class="slavyoga__logo">
-							<a href="" class="slavyoga__logotip"><img src="img/logo.svg" alt=""></a>
+							<a href="" class="slavyoga__logotip"><picture><source srcset="img/slavyoga/logo.webp" type="image/webp"><img src="img/slavyoga/logo.png" alt=""></picture></a>
 							<div class="slavyoga__title">
 								<h2 class="slavyoga__name">SLAVYOGA - здоровье и йога</h2>
 								<div class="slavyoga__subscribers">282 тыс. подписчиков</div>
@@ -341,24 +361,41 @@
 									513 тыс. просмотров </div>
 							</div>
 						</div>
-						<a href="https://youtu.be/dg_XoeJ9Xwg" target="_blank" class="slavyoga__btn btn"><span><picture><source srcset="img/header/yt.webp" type="image/webp"><img src="img/header/yt.png" alt=""></picture></span> перейти на YouTube - канал</a>
 					</div>
 				</div>
 			</section>
+			<article class="page__yt yt">
+				<div class="yt__container">
+					<div class="yt__body">
+						<a href="https://youtu.be/dg_XoeJ9Xwg" target="_blank" class="yt__btn btn yt__btn_pc"><span><picture><source srcset="img/header/yt.webp" type="image/webp"><img src="img/header/yt.png" alt=""></picture></span> перейти на YouTube -
+							канал</a>
+					</div>
+					<a href="https://youtu.be/dg_XoeJ9Xwg" target="_blank" class="yt__btn btn yt__btn_mob"><span><picture><source srcset="img/header/yt.webp" type="image/webp"><img src="img/header/yt.png" alt=""></picture></span> перейти на YouTube </a>
+				</div>
+
+
+
+			</article>
 			<section class="page__howtouse howtouse">
 				<div class="howtouse__container">
 					<div class="howtouse__body">
-						<div class="howtouse__title title">как заниматься на медицинском тренажере drevmass</div>
+						<h2 class="howtouse__title title"><span>как заниматься на медицинском тренажере drevmass</span>
+						</h2>
 						<div class="howtouse__video">
-							<div data-popup="#popupfive" class="howtouse__image"><picture><source srcset="img/howtouse/video.webp" type="image/webp"><img src="img/howtouse/video.png" alt="videofive"></picture></div>
+							<div data-popup-youtube="g21CoKyhI_M" data-popup="#popupfive" class="howtouse__image"><picture><source srcset="img/howtouse/video.webp" type="image/webp"><img src="img/howtouse/video.png" alt="videofive"></picture>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+
+
 			<section class="page__allinclusive allinclusive">
 				<div class="allinclusive__container">
 					<div class="allinclusive__body">
-						<h2 class="allinclusive__title title">Избавьтесь от боли за 15 минут в день!
+						<h2 class="allinclusive__title title">
+							<span>Избавьтесь от боли за 15 минут в день!</span>
+
 						</h2>
 						<div class="allinclusive__description">Простые упражнения и тренажер помогут решить вашу проблему со
 							здоровьем</div>
@@ -404,7 +441,14 @@
 	<div id="popupone" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
-				<div class="popup__video"><iframe src="https://www.youtube.com/embed/ws0pdqq3y2g?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+				<div class="popup__video">
+					<!-- <iframe src="https://www.youtube.com/embed/ws0pdqq3y2g?controls=0"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe> -->
+					<div class="popup__text"></div>
+
+				</div>
 			</div>
 		</div>
 	</div>
@@ -413,7 +457,13 @@
 	<div id="popuptwo" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
-				<div class="popup__video"><iframe src="https://www.youtube.com/embed/xVb0IPVVSrQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+				<div class="popup__video">
+					<!-- <iframe src="https://www.youtube.com/embed/xVb0IPVVSrQ?controls=0"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe> -->
+					<div class="popup__text"></div>
+				</div>
 
 
 			</div>
@@ -424,7 +474,14 @@
 	<div id="popupthree" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
-				<div class="popup__video"><iframe src="https://www.youtube.com/embed/j6A2vzOvSjs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+				<div class="popup__video">
+					<!-- <iframe src="https://www.youtube.com/embed/j6A2vzOvSjs?controls=0"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe> -->
+					<div class="popup__text"></div>
+
+				</div>
 
 			</div>
 		</div>
@@ -434,7 +491,14 @@
 	<div id="popupfour" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
-				<div class="popup__video"><iframe src="https://www.youtube.com/embed/xVb0IPVVSrQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+				<div class="popup__video">
+					<!-- <iframe src="https://www.youtube.com/embed/xVb0IPVVSrQ?controls=0"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe> -->
+					<div class="popup__text"></div>
+
+				</div>
 			</div>
 		</div>
 	</div>
@@ -442,7 +506,14 @@
 	<div id="popupfive" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
-				<div class="popup__video"><iframe src="https://www.youtube.com/embed/g21CoKyhI_M?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+				<div class="popup__video">
+					<!-- <iframe src="https://www.youtube.com/embed/g21CoKyhI_M?controls=0"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe> -->
+					<div class="popup__text"></div>
+
+				</div>
 			</div>
 		</div>
 	</div>
@@ -451,10 +522,10 @@
 		<div class="popup__wrapper">
 			<div class="popup__content callback">
 				<div class="callback__header">
-					<div class="callback__title">Заказать звонок</div>
+					<h2 class="callback__title">Заказать звонок</h2>
 					<button data-close type="button" class="popup__close"></button>
 				</div>
-				<div class="callback__subtitle">Мы перезвоним Вам и ответим на Ваши вопросы</div>
+				<h3 class="callback__subtitle">Мы перезвоним Вам и ответим на Ваши вопросы</h3>
 				<div class="callback__form form">
 					<div class="form__line ">
 						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше Имя" class="input ">
@@ -479,7 +550,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220707071427"></script>
+	<script src="js/app.min.js?_v=20220708214221"></script>
 </body>
 
 </html>
